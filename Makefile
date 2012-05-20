@@ -15,8 +15,8 @@ all: $(O)/freecube
 debug: $(ODEBUG)/freecube
 
 clean:
-	rm -f $(O)/*
-	rm -f $(ODEBUG)/*
+	rm -rf -- $(ODEBUG)
+	rm -rf -- $(O)
 
 $(O)/freecube: $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) \
