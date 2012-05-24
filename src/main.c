@@ -11,6 +11,8 @@ int main(int argc, char** argv) {
   initialize_cube(c,3);
   DONE;
   print_cube(c);
+  free_cube(c);
+  free(c);
   printf("Exiting ...\n");
   return 0;
 }
